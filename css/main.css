@@ -1,0 +1,143 @@
+/* Import Sci-Fi Font */
+@import url('https://fonts.cdnfonts.com/css/star-jedi');
+
+/* General Styles */
+body {
+    font-family: 'Star Jedi', sans-serif; /* Star Wars themed font */
+    background-color: #567cf0; /* Deep Space Navy */
+    color: #ffffff; /* Default text white */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/star-wars-bg.jpg'); /* Optional: Cosmic background */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Titles */
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 15px #ffb400; /* Soft golden glow */
+    margin-top: 30px;
+    color: #ffb400; /* Deep gold */
+}
+
+/* Character List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+li {
+    margin: 12px 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Character List - Brighter for Better Visibility */
+a.character-link {
+    color: #FFD700; /* Bright Yellow (Gold) for better contrast */
+    text-shadow: 0px 0px 12px #FFD700; /* Softer glow */
+    opacity: 0.85; /* Slightly stronger visibility */
+}
+
+/* Hover Effect - Slightly Brighter */
+a.character-link:hover {
+    color: #ffffff; /* White on hover */
+    text-shadow: 0px 0px 20px #FFD700; 
+    opacity: 1;
+}
+
+/* Active Character - Strong Glow */
+a.character-link.active {
+    color: #ffffff;
+    text-shadow: 0px 0px 25px #FFD700;
+    opacity: 1;
+}
+
+
+/* Movie Review Section */
+#review-con {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+    padding: 15px;
+    background: rgba(39, 68, 153, 0.9); /* Subtle cosmic dark effect */
+    border-radius: 10px;
+}
+
+/* Movie Title */
+.review-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffb400; /* Golden yellow */
+    text-shadow: 0px 0px 10px #ffb400;
+    margin-bottom: 15px;
+}
+
+/* Movie Description */
+.review-description {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Movie Posters */
+img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #ffb400; /* Gold glow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    a {
+        font-size: 1.5rem;
+    }
+    
+    .review-heading {
+        font-size: 1.6rem;
+    }
+
+    .review-description {
+        font-size: 1.1rem;
+    }
+}
+/* Movie Poster Styling */
+#review-con img {
+    width: 300px; /* Bigger images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.6); /* Golden glow */
+    display: block; /* Prevent layout issues */
+    margin: 20px auto; /* Centered with spacing */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect - Slight Zoom */
+#review-con img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 0px 25px rgba(255, 215, 0, 0.9); /* Stronger glow on hover */
+}
+
