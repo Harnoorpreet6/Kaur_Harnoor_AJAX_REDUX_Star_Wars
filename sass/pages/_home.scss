@@ -1,0 +1,21 @@
+a {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+}
+
+li {
+    padding: 10px;
+}
+
+li:nth-child(odd) {
+    background-color: #efefef;
+}
+
+li img {
+    max-width: 10%;
+    display: block;
+}
